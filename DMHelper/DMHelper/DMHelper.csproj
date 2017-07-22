@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -81,6 +82,9 @@
     <EmbeddedResource Include="Visuals\EntityInformation.resx">
       <DependentUpon>EntityInformation.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Characters\Mold.json" />
+    <None Include="Characters\Monsters.json" />
+    <None Include="Characters\PlayableCharacters.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -8,8 +8,9 @@ namespace DMHelper.Engine
 {
     public class Being
     {
-        public string name { get; private set; }
+        public string name { get; set; }
         public int proficiencyBonus { get; private set; }
+        public int initiative { get; set; }
         public int perception { get; set; }
         public Health health;
         private Dictionary<Trait, int> statistics;
@@ -23,6 +24,7 @@ namespace DMHelper.Engine
             name = _name;
             hitDie = _hitDie;
             proficiencyBonus = _proficiencyBonus;
+            initiative = 0;
             perception = _perception;
             armorClass = _armorClass;
             speed = _speed;
@@ -44,7 +46,7 @@ namespace DMHelper.Engine
             };
         }
 
-        public int initiative
+        public int initiativeModifier
         {
             get
             {
@@ -76,19 +78,29 @@ namespace DMHelper.Engine
         public class Health
         {
             private int max;
-            private int current;
             private int temp;
 
             public Health(int _max, int _current = -1, int _temp = 0)
             {
                 max = _max;
-                current = (_current == -1) ? _max : _current;
+                Current = (_current == -1) ? _max : _current;
                 temp = _temp;
             }
 
             public void healthChange(int change)
             {
                 Current += change;
+                if (Current < 0)
+                {
+                    if (Current <= (max * -1))
+                    {
+                        Current = -999;
+                    }
+                    else
+                    {
+                        Current = 0;
+                    }
+                }
             }
 
             public int Max
@@ -103,28 +115,7 @@ namespace DMHelper.Engine
                 }
             }
 
-            public int Current
-            {
-                get
-                {
-                    return current;
-                }
-                private set
-                {
-                    current -= value;
-                    if (current < 0)
-                    {
-                        if (current < (max * -1))
-                        {
-                            current = -999;
-                        }
-                        else
-                        {
-                            current = 0;
-                        }
-                    }
-                }
-            }
+            public int Current { get; set; }
 
             public int Temporary
             {

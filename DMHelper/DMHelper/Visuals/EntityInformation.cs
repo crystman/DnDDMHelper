@@ -31,7 +31,7 @@ namespace DMHelper.Visuals
         {
             label_name.Text = me.name;
             label_ac.Text = me.armorClass.ToString();
-            label_ini.Text = me.initiative.ToString();
+            label_ini.Text = $"{me.initiative}/{me.initiativeModifier.ToString()}";
             label_speed.Text = me.speed.ToString();
             
             label_str_base.Text = me.trait(Trait.STRENGTH).ToString();

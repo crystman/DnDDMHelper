@@ -37,10 +37,10 @@
             this.groupBox_ini = new System.Windows.Forms.GroupBox();
             this.label_ini = new System.Windows.Forms.Label();
             this.groupBox_str = new System.Windows.Forms.GroupBox();
-            this.groupBox_perception = new System.Windows.Forms.GroupBox();
-            this.label_perception = new System.Windows.Forms.Label();
             this.label_str_mod = new System.Windows.Forms.Label();
             this.label_str_base = new System.Windows.Forms.Label();
+            this.groupBox_perception = new System.Windows.Forms.GroupBox();
+            this.label_perception = new System.Windows.Forms.Label();
             this.groupBox_dex = new System.Windows.Forms.GroupBox();
             this.label_dex_mod = new System.Windows.Forms.Label();
             this.label_dex_base = new System.Windows.Forms.Label();
@@ -157,7 +157,7 @@
             this.label_ini.Name = "label_ini";
             this.label_ini.Size = new System.Drawing.Size(95, 33);
             this.label_ini.TabIndex = 0;
-            this.label_ini.Text = "3";
+            this.label_ini.Text = "16/3";
             this.label_ini.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox_str
@@ -170,27 +170,6 @@
             this.groupBox_str.TabIndex = 3;
             this.groupBox_str.TabStop = false;
             this.groupBox_str.Text = "STRENGTH";
-            // 
-            // groupBox_perception
-            // 
-            this.groupBox_perception.Controls.Add(this.label_perception);
-            this.groupBox_perception.Location = new System.Drawing.Point(300, 61);
-            this.groupBox_perception.Name = "groupBox_perception";
-            this.groupBox_perception.Size = new System.Drawing.Size(101, 52);
-            this.groupBox_perception.TabIndex = 4;
-            this.groupBox_perception.TabStop = false;
-            this.groupBox_perception.Text = "PERCEPTION";
-            // 
-            // label_perception
-            // 
-            this.label_perception.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label_perception.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_perception.Location = new System.Drawing.Point(3, 16);
-            this.label_perception.Name = "label_perception";
-            this.label_perception.Size = new System.Drawing.Size(95, 33);
-            this.label_perception.TabIndex = 0;
-            this.label_perception.Text = "14";
-            this.label_perception.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_str_mod
             // 
@@ -213,6 +192,27 @@
             this.label_str_base.TabIndex = 0;
             this.label_str_base.Tag = "13";
             this.label_str_base.Text = "15";
+            // 
+            // groupBox_perception
+            // 
+            this.groupBox_perception.Controls.Add(this.label_perception);
+            this.groupBox_perception.Location = new System.Drawing.Point(300, 61);
+            this.groupBox_perception.Name = "groupBox_perception";
+            this.groupBox_perception.Size = new System.Drawing.Size(101, 52);
+            this.groupBox_perception.TabIndex = 4;
+            this.groupBox_perception.TabStop = false;
+            this.groupBox_perception.Text = "PERCEPTION";
+            // 
+            // label_perception
+            // 
+            this.label_perception.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_perception.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_perception.Location = new System.Drawing.Point(3, 16);
+            this.label_perception.Name = "label_perception";
+            this.label_perception.Size = new System.Drawing.Size(95, 33);
+            this.label_perception.TabIndex = 0;
+            this.label_perception.Text = "14";
+            this.label_perception.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox_dex
             // 

@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Goblin",
+		"proficiency_bonus": 2,
+		"perception": 9,
+		"health": 7,
+		"strength": 8,
+		"dexterity": 14,
+		"constitution": 10,
+		"intelligence": 10,
+		"wisdom": 8,
+		"charisma": 8,
+		"armor_class": 15,
+		"speed": 30,
+		"hitdie": 6
+	},
+	{
+		"name": "Goblin Boss",
+		"proficiency_bonus": 2,
+		"perception": 9,
+		"health": 21,
+		"strength": 10,
+		"dexterity": 14,
+		"constitution": 10,
+		"intelligence": 10,
+		"wisdom": 8,
+		"charisma": 10,
+		"armor_class": 17,
+		"speed": 30,
+		"hitdie": 6
+	},
+]
